@@ -1,0 +1,27 @@
+<mujoco>
+    <compiler coordinate="local" angle="radian"/>
+    <option timestep="0.1">
+        <flag energy="enable"/>
+    </option>
+    <worldbody>
+        <light diffuse=".5 .5 .5" pos="0 0 3" dir="0 0 -1" castshadow="false"/>
+        <geom name="floor" pos="0 0 0" size="0 0 .25" type="plane" condim="3" rgba="0.9 0 0 1"/>
+        <body pos="0 0 0.9" name="pendulum">
+            <geom type="capsule" pos="0 0 0" size="0.06 0.3"/>
+            <joint type="hinge" name="hinge_y" pos="0 0 0.3" axis="0 1 0" damping = "0.5" limited="true" range="-20 20"/>
+            <body pos="0 0 -0.3" name="EE" >
+                    <site type="sphere" size="0.1" rgba="0 0 0.9 1"/>
+            </body>
+        </body>
+        <body pos="0 0 1.8" name="target" >
+            <site type="sphere" size="0.1" rgba="0 0.9 0 1"/>
+        </body>
+    </worldbody>
+    <actuator>
+        <motor name="hinge_y" gear="10" joint="hinge_y"/>
+    </actuator>
+    <sensor>
+        <jointpos name="hinge_y" joint="hinge_y"/>
+        <jointvel name="hinge_y_v" joint="hinge_y"/>
+    </sensor>
+</mujoco>
