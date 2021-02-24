@@ -1,7 +1,7 @@
 ## Inverted Pendulum task
 The task is to balance the pendulum upright using continuous control when the maximum torque available is not enough to overcome gravity. In this implementation a DDPG algorithm is used to learn the task. Mujoco libarary(http://www.mujoco.org/) is used to model the environment and pytorch c++ frontend(https://pytorch.org/cppdocs/frontend.html) provides the support for reinforcement learning framework.
 
-## platform
+## Platform
 
   * OS: windows10(64 bit)
   * CUDA: 10.1
