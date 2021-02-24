@@ -16,8 +16,8 @@ The task is to balance the pendulum upright using continuous control when the ma
   * boost: [1.75.0](https://www.boost.org/users/history/version_1_75_0.html)
 
 ## Instructions
-  * In Cmake.txt replace `C:/Users/kings/Desktop/source/mujoco200_win64/mujoco200_win64` at line 13 with the path to your mujoco installation
-  * In Cmake.txt replace `C:/Users/kings/Desktop/source/libtorch-mujoco-git` at line 14 with the path to where you download these source files
+  * In CMakeLists.txt replace `C:/Users/kings/Desktop/source/mujoco200_win64/mujoco200_win64` at line 13 with the path to your mujoco installation
+  * In CMakeLists.txt replace `C:/Users/kings/Desktop/source/libtorch-mujoco-git` at line 14 with the path to where you download these source files
   * open a command-prompt and `cd` to the location of these files
   * `mkdir build && cd build`
   * In order to build use command `cmake -DCMAKE_PREFIX_PATH=<absolute path to libtorch>\libtorch ..`
