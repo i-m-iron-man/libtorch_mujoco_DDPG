@@ -21,8 +21,8 @@ const int64_t actor_layer_4 = 32;
 const int64_t actor_out = 1;//output size of actor
 
 // input to critic = actor_state , actor_out as critic is for action-value
-const int64_t critic_layer_1 = 100;
-const int64_t critic_layer_2 = 50;
+const int64_t critic_layer_1 = 200;
+const int64_t critic_layer_2 = 100;
 const int64_t critic_layer_3 = 25;
 const int64_t critic_out = 1;// output_size of critic
 // note: architecture and activation f's of networks can be changed in "model.hpp"
