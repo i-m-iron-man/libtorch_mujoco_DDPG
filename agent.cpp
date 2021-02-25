@@ -47,7 +47,6 @@ Buffer(ReplayBuffer()),
 noise(OUNoise(actor_out)),
 device(torch::kCPU)
 {
-    cout<<"hi a new agent is created"<<endl;
     Agent::id = id;
     if (torch::cuda::is_available()) 
     {
